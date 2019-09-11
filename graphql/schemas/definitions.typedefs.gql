@@ -1,0 +1,36 @@
+"""
+A Person
+"""
+type Person {
+  id: ID!
+  name: String!
+  interests: Interests
+  friends: [Person]!
+}
+
+"""
+Interests track
+"""
+type Interests {
+  hiking: [Hike]!
+  concert: [Concert]!
+  watchList: [TVShow]!
+}
+
+type Hike {
+  id: ID!
+  place: String!
+  summary: String
+}
+
+type Concert {
+  id: ID!
+  artist: String!
+  local: String
+}
+
+type TVShow {
+  id: ID!
+  title: String
+  provider: Provider
+}

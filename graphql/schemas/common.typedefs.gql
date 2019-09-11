@@ -1,0 +1,5 @@
+enum Provider {
+  NETFLIX,
+  AMAZON,
+  CRAVE
+}

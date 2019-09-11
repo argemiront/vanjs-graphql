@@ -1,0 +1,6 @@
+type Query {
+  """
+  Fetches a person's data and interests
+  """
+  me: Person
+}
