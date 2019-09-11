@@ -1,0 +1,19 @@
+{
+  "name": "vanjs-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.9.3",
+    "dataloader": "^1.4.0",
+    "graphql": "^14.5.4",
+    "graphql-middleware": "^4.0.1",
+    "merge-graphql-schemas": "^1.7.0"
+  }
+}

@@ -1,0 +1,16 @@
+enum Provider {
+  NETFLIX,
+  AMAZON,
+  CRAVE
+}
+
+directive @format(
+  formatFn: String,
+  formatArgs: String
+) on FIELD_DEFINITION
+
+directive @match(
+  matchRegex: String,
+  matchDefaultFlags: String = "g",
+  matchFlags: String
+) on FIELD_DEFINITION
