@@ -9,7 +9,7 @@ module.exports = {
     },
     friends: (obj, args, ctx, info) => {
 
-      return obj.friends.map(item => lib.person.getByID(item));
+      return obj.friends.map(item => lib.person.getByID(item, ctx));
 
     },
   },

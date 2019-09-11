@@ -3,6 +3,7 @@ const authenticationMiddleware = require('./utils/authentication');
 const { applyMiddleware } = require('graphql-middleware');
 const gqlMiddleware = require('./graphql/middleware');
 const gqlExtensions = require('./graphql/extensions');
+const dataLoaders = require('./utils/dataloaders');
 const resolvers = require('./graphql/resolvers');
 const typeDefs = require('./graphql/schemas');
 const db = require('./utils/database');
@@ -24,6 +25,7 @@ const config = {
       stats: {
         startTime: new Date(),
       },
+      loaders: dataLoaders,
     };
 
   },

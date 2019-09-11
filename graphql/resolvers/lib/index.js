@@ -1,8 +1,9 @@
 const db = require('../../../utils/database');
 
 const person = {
-  getByID: (id) => {
-    return db.getPersonById(id);
+  getByID: (id, ctx) => {
+    return ctx.loaders.personLoader.load(id);
+    // return db.getPersonById(id);
   },
   listAll: () => db.listPersons(),
 };
